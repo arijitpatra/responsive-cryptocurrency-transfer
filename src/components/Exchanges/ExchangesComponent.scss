@@ -1,0 +1,57 @@
+@import "../../../public/assets/styles/variables";
+
+.exchanges-component {
+  display: flex;
+  flex: 1;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  position: relative;
+  font-family: $font-family;
+  .type {
+    text-transform: uppercase;
+    color: $medium-grey;
+  }
+  section {
+    background: $light-grey;
+    color: $dark-grey;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    width: 100%;
+    margin-top: 0.5rem;
+    img {
+      margin-right: 0.5rem;
+      height: 21px;
+      width: auto;
+    }
+  }
+
+  .adjust {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    section {
+      margin-top: 0;
+    }
+    .type {
+      position: absolute;
+      height: 100%;
+      align-items: center;
+      left: 3.5rem;
+      text-transform: uppercase;
+      color: $medium-grey;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .exchanges-component {
+    margin-bottom: 0.25rem !important;
+  }
+  .adjust {
+    width: 100px;
+  }
+}

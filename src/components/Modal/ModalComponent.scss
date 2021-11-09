@@ -1,0 +1,111 @@
+@import "../../../public/assets/styles/variables";
+
+.modal-component {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: $light-grey;
+  font-family: $font-family;
+
+  .amount-container {
+    border: 1px solid $medium-grey;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    color: $medium-grey;
+    font-size: 0.75rem;
+    text-align: right;
+    flex-wrap: nowrap !important;
+    .flex-column {
+      flex-direction: column;
+      align-items: flex-end;
+      letter-spacing: 0.025rem;
+      padding: 0 0.5rem 0 0;
+      .currency {
+        font-weight: bold;
+      }
+    }
+    input {
+      font-size: 1.5rem;
+      border: none;
+      padding: 0 1rem;
+      border-left: 1px solid $medium-grey;
+      outline: none;
+      color: $dark-grey;
+      width: 100%;
+      font-family: $font-family;
+    }
+  }
+
+  & > section {
+    .head {
+      border-bottom: 1px solid $light-grey;
+      h3 {
+        padding: 0 1.5rem;
+        color: $dark-grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        i {
+          cursor: pointer;
+        }
+      }
+    }
+    .body {
+      padding: 1.5rem;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        @media (min-width: 640px) {
+          align-items: center;
+        }
+        select {
+          width: 100%;
+          margin: 1.5rem 0;
+          padding: 1rem 0.5rem;
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          color: $dark-grey;
+          outline: none;
+          font-family: $font-family;
+        }
+      }
+    }
+    background: $white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    .arrow {
+      display: none;
+    }
+
+    .exchanges-container {
+      flex-direction: column;
+      .exchanges-component {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    @media (min-width: 640px) {
+      width: 50%;
+      max-width: 500px;
+      height: auto;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      box-shadow: 0px 5px 11px 0px #d2d2d2;
+      .arrow {
+        display: initial;
+        margin: 0 0.5rem;
+        height: 16px;
+        width: auto;
+        padding-top: 0.5rem;
+      }
+      .exchanges-container {
+        flex-direction: row;
+      }
+    }
+  }
+}

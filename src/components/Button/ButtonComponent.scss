@@ -1,0 +1,21 @@
+@import "../../../public/assets/styles/variables";
+
+.button-component {
+  background: $primary-color;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-family: $font-family;
+}
+
+button:disabled {
+  background: $light-grey;
+  cursor: not-allowed;
+}
