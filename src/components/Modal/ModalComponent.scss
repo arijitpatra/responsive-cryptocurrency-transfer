@@ -97,11 +97,11 @@
       top: 50%;
       box-shadow: 0px 5px 11px 0px #d2d2d2;
       .arrow {
-        display: initial;
-        margin: 0 0.5rem;
-        height: 16px;
-        width: auto;
+        display: block;
+        color: $primary-color;
+        margin: 0.5rem;
         padding-top: 0.5rem;
+        font-size: 18px;
       }
       .exchanges-container {
         flex-direction: row;

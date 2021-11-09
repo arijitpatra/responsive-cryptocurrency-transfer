@@ -39,7 +39,9 @@ const ModalComponent = (props) => {
               imageURL={item.imageURL}
               name={item.name}
             />
-            <img src="./logos/arrow.png" className="arrow"></img>
+            <div>
+              <i className="fa fa-chevron-circle-right arrow"></i>
+            </div>
           </>
         );
       } else {
@@ -71,7 +73,7 @@ const ModalComponent = (props) => {
         <div className="head">
           <h3>
             {header}
-            <i class="fa fa-times" onClick={(e) => onModalClose(e)}></i>
+            <i className="fa fa-times" onClick={(e) => onModalClose(e)}></i>
           </h3>
         </div>
 
